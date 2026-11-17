@@ -6,16 +6,50 @@
   min-height: 640px;
 }
 
+.hero::after {
+  background:
+    linear-gradient(90deg, #170d0cf2 0%, #170d0cd9 36%, #170d0cbd 53%, #170d0c20 81%, transparent),
+    linear-gradient(180deg, #170d0ce6 0%, #170d0c00 27%, #170d0c00 72%, #170d0cd9 100%);
+}
+
 .hero-content {
   padding-bottom: 55px;
 }
 
 .hero .hero-copy {
-  max-width: 37ch;
+  max-width: 43ch;
+  color: #fffaf3;
+  font-size: clamp(1.125rem, 1.65vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .hero .hero-content h1 {
-  text-shadow: 0 3px 8px #170b07a6, -1px 0 4px #e8c48e38;
+  color: #fffaf3;
+  font: 700 clamp(3rem, 5.5vw, 6rem)/1.08 Georgia, 'Times New Roman', serif;
+  letter-spacing: -.027em;
+  text-shadow: 0 2px 5px #170d0cb3;
+}
+
+.hero .hero-eyebrow {
+  background: #520d1c;
+  color: #fffaf3;
+  font-size: .8125rem;
+  letter-spacing: .12em;
+}
+
+.hero .button-light,
+.hero .hero-secondary,
+.desktop-nav a {
+  font-size: .8125rem;
+  letter-spacing: .08em;
+}
+
+.hero .hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #fffaf3;
 }
 
 .hero .button-light,
@@ -48,8 +82,8 @@
   min-height: 44px;
   border: 1px solid transparent;
   padding: 6px 12px;
-  background: #1c12108f;
-  font-size: .75rem;
+  background: #241514e8;
+  font-size: .8125rem;
   letter-spacing: .02em;
   text-transform: none;
 }
@@ -406,8 +440,8 @@
     height: 100svh;
   }
 
-  .hero:after {
-    background: linear-gradient(180deg, #180e0b9e, #180e0b18 26%, #180e0b88 47%, #180e0bd9 76%, #180e0bf7);
+  .hero::after {
+    background: linear-gradient(180deg, #170d0cbf 0%, #170d0c20 18%, #170d0ca6 33%, #170d0cdb 49%, #170d0cf5 100%);
   }
 
   .hero-content {
@@ -417,18 +451,24 @@
   }
 
   .hero .hero-content h1 {
-    font-size: clamp(2.45rem, 10.6vw, 3.8rem);
+    font-size: clamp(1.8rem, 9.5vw, 3.55rem);
     margin: 19px 0 14px;
   }
 
   .hero .hero-copy {
-    font-size: .99rem;
     margin-bottom: 18px;
   }
 
   .hero .button-light {
     min-height: 48px;
-    font-size: .68rem;
+    padding-inline: 16px;
+  }
+
+  .hero .hero-eyebrow {
+    max-width: 100%;
+    padding-inline: 10px;
+    font-size: .75rem;
+    letter-spacing: .07em;
   }
 
   .hero-slides .hero-slide {
@@ -452,7 +492,7 @@
 
   .hero-media button {
     padding-inline: 7px;
-    font-size: .7rem;
+    font-size: .75rem;
   }
 
   .hero-credit {
@@ -515,7 +555,7 @@
   }
 
   .hero-media button {
-    font-size: .63rem;
+    font-size: .6875rem;
     padding-inline: 5px;
   }
 }
