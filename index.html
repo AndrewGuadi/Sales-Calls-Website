@@ -61,8 +61,39 @@
 .slide-select.is-active{background:#520b1d;border-color:#e1c086}.slide-select:hover,.slide-pause:hover{border-color:#e1c086;background:#520b1d}.slide-pause{justify-content:center;width:auto;padding:8px 12px;font-size:.62rem;text-transform:uppercase}
 @media(max-width:600px){.hero-carousel-controls{left:18px;bottom:22px}.hero-carousel-label{font-size:.5rem;margin-bottom:6px}.slide-select{padding:7px 9px;min-height:38px}.slide-name{display:none}.slide-pause{min-height:38px;width:auto}.hero .image-credit{bottom:3px;font-size:.48rem}.hero-content{padding-bottom:42px}}
 @media(prefers-reduced-motion:reduce){.hero-slides .hero-slide{transition:none}}
+/* Size the brand artwork with the header, including when a cached stylesheet is used. */
+.header .brand-image {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 142px;
+  height: 100%;
+}
+.header .brand-image img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.footer .footer-brand {
+  display: block;
+  width: min(190px, 100%);
+  margin-bottom: 22px;
+}
+.footer .footer-brand img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 950px) {
+  .header .brand-image { width: 112px; }
+}
+@media (max-width: 600px) {
+  .header .brand-image { width: 95px; }
+  .footer .footer-brand { width: min(160px, 100%); }
+}
 </style>
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="homepage.css?v=brand-sizing">
   <script src="homepage.js" defer></script>
 </head>
 <body>
