@@ -519,3 +519,11 @@
     padding-inline: 5px;
   }
 }
+
+/* Original venue brand artwork */
+.header .brand-image { display: flex; align-items: center; height: 100%; flex-shrink: 0; }
+.header .brand-image img { width: 142px; height: 106px; object-fit: contain; }
+.footer .footer-brand { display: block; width: 190px; height: auto; margin-bottom: 22px; }
+.footer .footer-brand img { width: 100%; height: auto; object-fit: contain; }
+@media (max-width: 950px) { .header .brand-image img { width: 112px; height: 84px; } }
+@media (max-width: 600px) { .header .brand-image img { width: 95px; height: 71px; } .footer .footer-brand { width: 160px; } .hero-slides .hero-slide:first-child { object-position: 56% center; } }
