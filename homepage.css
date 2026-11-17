@@ -1,0 +1,521 @@
+[hidden] {
+  display: none !important;
+}
+
+.hero {
+  min-height: 640px;
+}
+
+.hero-content {
+  padding-bottom: 55px;
+}
+
+.hero .hero-copy {
+  max-width: 37ch;
+}
+
+.hero .hero-content h1 {
+  text-shadow: 0 3px 8px #170b07a6, -1px 0 4px #e8c48e38;
+}
+
+.hero .button-light,
+.desktop-nav .nav-button {
+  border-color: #e1c086;
+  background: #520d1c;
+  box-shadow: inset 0 1px 0 #fff1d141;
+}
+
+.hero-media {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 12px;
+  border-top: 1px solid #f0dcbb55;
+}
+
+.hero-media .hero-carousel-controls {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-media button {
+  min-height: 44px;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  background: #1c12108f;
+  font-size: .75rem;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+
+.hero-media button.is-active,
+.hero-media button:hover {
+  background: #4c0f1e;
+  border-color: #dbb77e;
+}
+
+.hero-media .slide-pause {
+  margin-left: 4px;
+  color: #f3dcb6;
+}
+
+.hero-credit {
+  padding: 3px 7px;
+  background: #130b08b3;
+  color: #fff5e5;
+  font-size: .67rem;
+  text-align: right;
+}
+
+.hero-slides .hero-slide-music {
+  object-position: 74% center;
+}
+
+.hero-slides .hero-slide-milestone {
+  object-position: 72% center;
+}
+
+.venue-at-a-glance {
+  background: #ede4d6;
+  border-bottom: 1px solid #cfc1ad;
+}
+
+.venue-at-a-glance-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 16px;
+}
+
+.venue-at-a-glance-inner div {
+  padding: 5px 24px;
+}
+
+.venue-at-a-glance-inner div:first-child {
+  padding-left: 0;
+}
+
+.venue-at-a-glance-inner div + div {
+  border-left: 1px solid #cfc1ad;
+}
+
+.venue-at-a-glance-inner span {
+  display: block;
+  color: #634b41;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.venue-at-a-glance-inner a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-size: clamp(1rem, 1.55vw, 1.55rem);
+}
+
+.venue-at-a-glance-inner b {
+  color: #6e2434;
+  font: 400 .8rem Manrope, sans-serif;
+}
+
+.venue-at-a-glance-inner a:hover,
+.faq-grid p a:hover {
+  text-decoration: underline;
+}
+
+.venue-intro {
+  background: var(--paper);
+}
+
+.venue-intro .experience-grid {
+  grid-template-columns: .9fr 1fr;
+  gap: clamp(32px, 8vw, 125px);
+}
+
+.venue-intro .experience-copy .subhead {
+  margin-bottom: 16px;
+}
+
+.venue-intro .text-link {
+  margin-top: 8px;
+}
+
+.venue-portrait {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  margin: 0;
+}
+
+.venue-portrait img,
+.inspiration-grid img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.venue-portrait figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px 12px;
+  background: #241813dd;
+  color: #fff5e5;
+  font-size: .72rem;
+}
+
+#celebrations {
+  padding-top: 0;
+}
+
+.occasions-header h2,
+.price-head h2 {
+  margin-top: 14px;
+}
+
+.occasion-card {
+  height: clamp(340px, 36vw, 485px);
+}
+
+.occasion-card:last-child img {
+  object-position: 73% center;
+}
+
+.occasion-card .occasion-content {
+  left: clamp(18px, 2vw, 30px);
+  right: clamp(18px, 2vw, 30px);
+}
+
+.occasion-content a,
+.price-card .text-link {
+  letter-spacing: .09em;
+  font-size: .72rem;
+}
+
+.price-grid + .price-grid {
+  margin-top: 20px;
+}
+
+.price-card {
+  min-height: 325px;
+}
+
+.price-card p {
+  font-size: .94rem;
+}
+
+.price-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  margin-top: 20px;
+}
+
+.price-meta .price-foot {
+  margin: 0;
+  font-size: .8rem;
+}
+
+.price-meta .text-link:hover {
+  color: #f0d6ae;
+}
+
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: clamp(14px, 2.3vw, 28px);
+  margin-top: 42px;
+}
+
+.inspiration-grid figure {
+  margin: 0;
+}
+
+.inspiration-grid a {
+  display: block;
+  height: clamp(165px, 23vw, 325px);
+  overflow: hidden;
+  background: #6e513e;
+}
+
+.inspiration-grid figure:nth-child(2) img {
+  object-position: 73% center;
+}
+
+.inspiration-grid img {
+  transition: transform .35s ease;
+}
+
+.inspiration-grid a:hover img,
+.inspiration-grid a:focus-visible img {
+  transform: scale(1.03);
+}
+
+.inspiration-grid figcaption {
+  padding-top: 12px;
+  color: #59473e;
+  font-weight: 600;
+  font-size: .85rem;
+}
+
+.arrival-card {
+  padding: clamp(22px, 4vw, 56px);
+  background: #e4d7c6;
+  border: 1px solid #c7b49d;
+}
+
+.arrival-card h3 {
+  margin: 15px 0 8px;
+  font: 400 clamp(1.8rem, 3.5vw, 3.25rem)/1.1 'Bodoni Moda', Georgia, serif;
+}
+
+.arrival-card p + p {
+  margin-top: 16px;
+}
+
+.arrival-card .text-link {
+  margin-top: 24px;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  align-items: start;
+  gap: 45px;
+}
+
+.faq-layout .faq-grid {
+  grid-template-columns: 1fr;
+}
+
+.faq-grid p a {
+  text-decoration: underline;
+}
+
+.contact-dialog {
+  position: fixed;
+  width: min(560px, calc(100% - 32px));
+  margin: auto;
+  padding: clamp(25px, 5vw, 52px);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid #c09e76;
+  box-shadow: 0 18px 65px #1c101790;
+}
+
+.contact-dialog::backdrop {
+  background: #1a1117bd;
+}
+
+.contact-dialog h2 {
+  font: 400 clamp(2.25rem, 6vw, 3.4rem)/1.05 'Bodoni Moda', Georgia, serif;
+  margin: 12px 0 18px;
+}
+
+.contact-dialog p {
+  color: #52453d;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.contact-phone {
+  align-self: center;
+  text-decoration: underline;
+  padding: 6px 0;
+}
+
+.mobile-nav a {
+  padding-block: 8px;
+}
+
+@media (max-width: 950px) {
+  .venue-intro .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-portrait {
+    aspect-ratio: 3 / 2;
+  }
+
+  .occasion-card:last-child {
+    grid-column: auto;
+    height: clamp(340px, 36vw, 485px);
+  }
+
+  .occasion-grid,
+  .price-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .price-card {
+    padding: 24px 18px;
+  }
+
+  .price-card h3 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .occasion-grid,
+  .price-grid,
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card {
+    min-height: 0;
+    padding: 27px;
+  }
+
+  .inspiration-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inspiration-grid figure:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .inspiration-grid figure:first-child a {
+    height: 225px;
+  }
+
+  .faq-layout {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 650px;
+    height: 100svh;
+  }
+
+  .hero:after {
+    background: linear-gradient(180deg, #180e0b9e, #180e0b18 26%, #180e0b88 47%, #180e0bd9 76%, #180e0bf7);
+  }
+
+  .hero-content {
+    justify-content: flex-end;
+    padding-top: 100px;
+    padding-bottom: 126px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: clamp(2.45rem, 10.6vw, 3.8rem);
+    margin: 19px 0 14px;
+  }
+
+  .hero .hero-copy {
+    font-size: .99rem;
+    margin-bottom: 18px;
+  }
+
+  .hero .button-light {
+    min-height: 48px;
+    font-size: .68rem;
+  }
+
+  .hero-slides .hero-slide {
+    object-position: 60% center;
+  }
+
+  .hero-slides .hero-slide-music {
+    object-position: 81% center;
+  }
+
+  .hero-slides .hero-slide-milestone {
+    object-position: 85% center;
+  }
+
+  .hero-media {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    padding-block: 6px;
+  }
+
+  .hero-media button {
+    padding-inline: 7px;
+    font-size: .7rem;
+  }
+
+  .hero-credit {
+    text-align: left;
+    padding-left: 0;
+    background: transparent;
+  }
+
+  .venue-at-a-glance-inner div {
+    padding-inline: 10px;
+  }
+
+  .venue-at-a-glance-inner span {
+    font-size: .57rem;
+  }
+
+  .venue-at-a-glance-inner a {
+    gap: 3px;
+  }
+}
+
+.venue-at-a-glance-inner b {
+  font-size: 0;
+}
+
+.venue-at-a-glance-inner b::before {
+  content: '→';
+  font: 400 .8rem Arial, sans-serif;
+}
+
+.arrival-card .text-link {
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .venue-at-a-glance-inner a {
+    font-size: clamp(.9rem, 4.1vw, 1.05rem);
+  }
+
+  .venue-at-a-glance-inner b {
+    display: none;
+  }
+
+  .hero-media .hero-carousel-controls {
+    width: 100%;
+    gap: 2px;
+  }
+
+  .hero-media button {
+    white-space: nowrap;
+    padding-inline: 6px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-media .hero-carousel-controls {
+    gap: 0;
+  }
+
+  .hero-media button {
+    font-size: .63rem;
+    padding-inline: 5px;
+  }
+}
